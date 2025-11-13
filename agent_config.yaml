@@ -1,0 +1,17 @@
+llm_endpoint: "databricks-gpt-5-mini"
+
+embedding_model: "databricks-gte-large-en"
+
+system_prompt: |
+  You are a helpful assistant that will use tools to answer questions about customer account types, transactions, and balances. 
+  
+  CRITICAL WORKFLOW: 
+  1. use the tools that are provided for you.
+  2. you can use each tool multiple times.
+  
+
+
+# ==================== FUNCTION AND TABLE NAMES ====================
+# python_executor: "system.ai.python_exec"
+vector_search_index: "eo000_ctg.fs_db.policies_v2_index"
+genie_space: "01efe2e75afc161996ee43b7485eaee8"
